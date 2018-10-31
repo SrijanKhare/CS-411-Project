@@ -37,14 +37,14 @@ cur.execute("USE CS411")
 
 create_movie_table = """Create Table CS411.Movie (
                Movie_ID INT NOT NULL AUTO_INCREMENT,
-               Title VARCHAR(50) NOT NULL,
+               Title VARCHAR(250) NOT NULL,
                Year INT,
-               Director VARCHAR(50),
+               Director VARCHAR(250),
                Rating FLOAT,
                Primary Key(Movie_ID))"""
 create_genre_table = """Create Table CS411.Genre (
                    Genre_ID INT NOT NULL AUTO_INCREMENT,
-                   Genre_Name VARCHAR(50),
+                   Genre_Name VARCHAR(250),
                    Primary Key(Genre_ID))"""
 create_movie_genre_relationship = """Create Table CS411.Genre_Movie (
                    Genre_ID INT NOT NULL ,
@@ -55,9 +55,9 @@ create_movie_genre_relationship = """Create Table CS411.Genre_Movie (
                    )"""
 create_user_table = """Create Table CS411.User (
                User_ID INT NOT NULL AUTO_INCREMENT,
-               Name VARCHAR(50) NOT NULL,
+               Name VARCHAR(250) NOT NULL,
                Age INT,
-               Gender VARCHAR(50),
+               Gender VARCHAR(250),
                Primary Key(User_ID))"""
 create_rating_table = """Create Table CS411.Rating (
                Comment_ID INT NOT NULL AUTO_INCREMENT,
